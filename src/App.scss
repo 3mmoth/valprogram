@@ -1,0 +1,329 @@
+$main-red: #ED1B34;
+$dark-red: #b40d1e;
+$pink: #fbd1d6;
+$orange: #fb8330;
+$dark-grey: #333333;
+$white: #ffffff;
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+@font-face {
+  font-family: kapra-neue;
+  src: url(fonts/KapraNeueCustom-Bold.otf);
+}
+
+@font-face {
+  font-family: avenir;
+  src: url(fonts/Avenir.ttc);
+}
+
+@media screen and (max-width: 760px){
+  .App-header{
+  background-color: $main-red;
+  min-height: 370px;
+  max-height: fit-content;
+  font-size: 20px;
+  font-family: kapra-neue;
+  position: relative;
+  color: white;
+  
+  .header-text{
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-right: 300px;
+    padding-top: 100px;
+  }
+
+  .navbar {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+
+  .nav-item{
+    display:inline-block;
+    margin-left: 0%;
+    margin-right: -50px;
+    padding-left: 10px;
+    padding-right: 40px;
+    text-decoration: none;
+    border-radius: 20px 0 0px 20px;
+    transition: border-radius 0.5s;
+    color: $white;
+  }
+  .nav-container{
+    right: 0px;
+    bottom: 10px;
+    position: absolute;
+    margin-left: auto;
+
+  }
+  .nav-item:hover{
+    background-color: $pink;
+    color: $main-red;
+    border-radius: 10px 0px 0px 10px;
+  
+  }
+  .nav-item-selected{
+    background-color: $pink;
+    color: $main-red;
+  }
+  .nav-item-not-selected{
+    background-color: transparent;
+    color:$white;
+  }
+  .nav-link{
+    text-decoration: none;
+    color: $white;
+  }
+  .nav-link:hover{
+    text-decoration: none;
+    color: $main-red;
+  }
+  .nav-text{
+    font-family: avenir;
+    text-decoration: none;
+    color: $white;
+  }
+}
+}
+@media screen and (min-width:760px){
+.App-header {
+  background-color: $main-red;
+  min-height: 200px;
+  max-height: fit-content;
+  font-size: 20px;
+  font-family: kapra-neue;
+  position: relative;
+  color: white;
+
+
+  .navbar {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .header-text{
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-top: 30px;
+  }
+  .nav-item{
+    display:inline-block;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-decoration: none;
+    border-radius: 20px 20px 0px 0px;
+    transition: border-radius 0.5s;
+    color: $white;
+  }
+  .nav-container{
+    bottom: 0px;
+    position: absolute;
+    margin-left: auto;
+
+  }
+  .nav-item:hover{
+    background-color: $pink;
+    color: $main-red;
+    border-radius: 10px 10px 0px 0px;
+  
+  }
+  .nav-item-selected{
+    background-color: $pink;
+    color: $main-red;
+  }
+  .nav-item-not-selected{
+    background-color: transparent;
+    color:$white;
+  }
+  .nav-link{
+    text-decoration: none;
+    color: $white;
+  }
+  .nav-link:hover{
+    text-decoration: none;
+    color: $main-red;
+  }
+  .nav-text{
+    font-family: avenir;
+    text-decoration: none;
+    color: $white;
+  }
+  
+}
+}
+.example-enter {
+  opacity: 0.0;
+}
+
+.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter-done{
+  opacity: 1;
+  transition: opacity 1000ms ease 1000ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit{
+  opacity: 0;
+  transition: opacity 5000ms linear;
+}
+
+.fade-exit-done {
+  opacity: 0;
+}
+
+.particles{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+
+
+.App-main{
+  margin-top: 0%;
+  min-height: 600px;
+  max-height: fit-content;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: garamond;
+  position: relative;
+  color: $dark-grey;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  .container{
+    max-width: 1000px;
+    position: relative;
+  }
+  h1{
+    font-family: kapra-neue;
+    color: $main-red;
+    font-size: 60px;
+    z-index: 10;
+    text-transform: uppercase;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: avenir;
+    font-style: italic;
+    color: $main-red;
+    
+  }
+  ul{
+    list-style-type: none;
+    list-style: none;
+    font-size: 20px;
+    font-family: avenir;
+    margin-left: 30px;
+  }
+  
+}
+
+
+.top-image{
+  max-width: 100%;
+}
+
+.App-footer{
+  background-color: $main-red;
+  bottom: 0px;
+  padding-top: 50px;
+  min-height: 300px;
+  max-height: fit-content;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: $dark-grey;
+  .bottom-logo{
+    max-width: 40%;
+    margin-right: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  .logo-container{
+    text-align: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+  }
+  .footer-text{
+    text-align: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    font-size: 15px;
+  }
+  h3{
+    font-size: 25px;
+    color: $white;
+    font-weight: 500;
+  }
+  p{
+    color: $white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  a{
+    text-decoration: underline;
+    color: $white;
+    font-size: 20px;
+  }
+  
+}
+
+
