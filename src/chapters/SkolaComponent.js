@@ -11,7 +11,7 @@ function Skola(){
         activeObject: null,
         objects: 
         [{id: 1, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
-        {id: 2, text: "Quisque lacinia tempus quam vitae accumsan."},
+        {id: 2, text: "Quisque lacinia ts quam vitae accumsan."},
         {id: 3, text: "In suscipit risus ut blandit blandit. Vestibulum euismod venenatis arcu eget luctus."},
         {id: 4, text: "Nullam luctus consectetur augue vitae sagittis."},
         {id: 5, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
